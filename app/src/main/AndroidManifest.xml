@@ -19,7 +19,7 @@
         </activity>
         <activity android:name=".Toppings"></activity>
         <activity android:name=".Order" />
-        <activity android:name=".MainActivity$MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:text="Veggie"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:gravity="left"
+        android:text="200"
+        android:textSize="20dp"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_toppings"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_weight="3"-->
+<!--        android:text="Veggie 2$"-->
+<!--         />-->
+
+
+
+</LinearLayout>

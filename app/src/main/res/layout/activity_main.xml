@@ -1,69 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:orientation="vertical"
-    tools:context=".Listing">
+    android:background="@drawable/bgh"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView_price"
+        android:layout_width="297dp"
+        android:layout_height="55dp"
+        android:textSize="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="610dp"
+        android:layout_marginEnd="25dp"
+        android:hint="Select any pizza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757" />
+
+    <ImageButton
+        android:id="@+id/pizza1"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="194dp"
+        android:layout_marginBottom="449dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/veg1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:text="Veggie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:text="Chicken"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="12dp"
+        android:text="Pepperoni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:text="Sausage"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza4" />
+
+    <ImageButton
+        android:id="@+id/pizza2"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="449dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chicken1" />
+
+    <ImageButton
+        android:id="@+id/pizza3"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="271dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="282dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/peppizza1" />
+
+    <ImageButton
+        android:id="@+id/pizza4"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="271dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="287dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sauage1" />
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your previous Orders"/>
+        android:layout_marginTop="493dp"
+        android:layout_marginBottom="115dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    <TextView
+        android:layout_width="272dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="568dp"
+        android:text="Welcome to Pizza Order Machine! Select the pizza and Tap Start Order to order your favourite pizza!!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tv_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="ID"
-            android:textSize="15dp"
-            />
-
-        <TextView
-            android:id="@+id/tv_type"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:text="Pizza Type"
-            android:textSize="20dp"
-            />
-
-        <TextView
-            android:id="@+id/tv_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:gravity="left"
-            android:text="Price"
-            android:textSize="20dp"
-            />
-
-    </LinearLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="20dp"
-        android:id="@+id/listView"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-    <Button
-        android:id="@+id/new_order"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:text="Place new Order">
-
-    </Button>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
